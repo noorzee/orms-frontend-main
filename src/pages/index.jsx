@@ -1,0 +1,17 @@
+export { default as Enquires } from './Enquires';
+export { default as Add_user } from './Add_user';
+export { default as Lecture } from './Lecture';
+export { default as Login } from './Login';
+export { default as Results } from './Results';
+export { default as Settings } from './Settings';
+export { default as Dashboard } from './Dashboard';
+export { default as Customers } from './Customers';
+export { default as ColorPicker } from './ColorPicker';
+export { default as Calendar } from './Calendar';
+export { default as Area } from './Charts/Area';
+export { default as Bar } from './Charts/Bar';
+export { default as ColorMapping } from './Charts/ColorMapping';
+export { default as Financial } from './Charts/Financial';
+export { default as Line } from './Charts/Line';
+export { default as Pie } from './Charts/Pie';
+export { default as Stacked } from './Charts/Stacked';
