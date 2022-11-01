@@ -50,7 +50,7 @@ const Login = () => {
     if (isAutheticated() != null) {
       navigate("/Dashboard");
     } else {
-      alert("DONE");
+      alert("Authentication failed");
     }
   };
 
