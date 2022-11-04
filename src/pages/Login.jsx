@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Header } from "../components";
 
 import { signin, authenticate, isAutheticated } from "../auth/helper/index";
 
 const Login = () => {
+  {Header()}
   const [values, setValues] = useState({
     username: "",
     password: "",

@@ -1,4 +1,13 @@
 export { default as Button } from './Button';
+export { default as search_bar } from './search_bar';
+export { default as Resultscard } from './Resultscard';
+export { default as EnquireForm } from './EnquireForm';
+export { default as Usersetting } from './usersetting';
+export { default as add_subjects } from './add_subjects';
+export { default as subjectmanagementform } from './subjectmanagementform';
+export { default as Facultyanagementform } from './Facultyanagementform';
+export { default as degreemanagementform } from './degreemanagementform';
+export { default as departmentanagementform } from './departmentanagementform';
 export { default as add_asignment_reults } from './add_asignment_reults';
 export { default as add_final_marks } from './add_final_marks';
 export { default as Acordination_nested } from './Acordination_nested';

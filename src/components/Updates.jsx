@@ -3,7 +3,7 @@ import React from 'react'
 const Updates = () => {
   return (
     <div className='flex'>
-        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl h-full overflow-scroll flex md:h-96'>
+        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl h-full overflow-scroll flex md:h-96 shadow-sm'>
             <div>
                 <div className=' justify-between mb-4'><p className='font-semibold text-xl'>Recent Updates</p></div>
                 <div className='border-b-1 border-color mb-3'>

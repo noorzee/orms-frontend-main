@@ -1,15 +1,23 @@
-import React from 'react'
-import { Header,EnquireForm } from '../components'
+import React, {useState} from 'react'
+import Select from 'react-select'
 
-const Enquires = () => {
-  {Header()}
+const subjectsoption = [
+{ value: 'chocolate', label: 'Chocolate' },
+{ value: 'strawberry', label: 'Strawberry' },
+{ value: 'vanilla', label: 'Vanilla' }
+];
 
+const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      padding: 5,
+    })}
+
+  
+
+const add_subjects = () => {
   return (
-    <div className='mt-12 ml-8 mr-8'>
-    <div className='w-1200'>
-    <h1 className='font-semibold text-xl ml-4 mb-10'>Enquiry</h1>
-    <div className='flex flex-shrink-0 m-0 flex-wrap justify-left gap-3 items-left w-full'>
-         <div className='relative bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl h-full  w-full shadow-sm'>
+    
             <div className='w-full'>
                 <form class="w-full ">
                     <div className="flex flex-wrap -mx-3 mb-6">
@@ -33,13 +41,18 @@ const Enquires = () => {
                         </div>
                     </div>
                 </form>
-              
+                <hr></hr>
+                <p className='mt-3 text-gray-500'>You can import students using a ".CSV" file if you want to add more than one to the system.</p>
+                <p className='font-bold mt-3 text-xs text-gray-500'> Important
+                    <ul className='list-disc ml-4'>
+                        <li>Files must be in UTF-8 format.</li>
+                        <li>You must include all required fields when you create a record.</li>
+                        <li>If you're updating a record, any fields that aren't defined in the CSV file are ignored during the update.</li>
+                    </ul>
+                </p>
             </div>
-        </div>
-    </div>
-    </div>
-    </div>
   )
+          
 }
 
-export default Enquires
+export default add_subjects
