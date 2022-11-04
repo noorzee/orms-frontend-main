@@ -5,13 +5,14 @@ import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import {Collapse} from 'react-collapse';
 
-import { Stacked, Pie, Button, LineChart, SparkLine,Updates,dashboard_results,Collapseble,AccordinationUI,lecture_items,add_final_marks,search_bar } from '../components';
+import { Stacked, Pie, Button, LineChart, SparkLine,Updates,dashboard_results,Collapseble,AccordinationUI,lecture_items,add_final_marks,search_bar,Header } from '../components';
 import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 import { insertMerge } from '@syncfusion/ej2/spreadsheet';
 
 
 function Accordination(){
+  {Header()}
   const[Index,setIndex] = useState(false);
   
   

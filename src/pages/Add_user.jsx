@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Select from 'react-select'
+import { Header } from '../components';
 
 const subjectsoption = [
 { value: 'chocolate', label: 'Chocolate' },
@@ -16,6 +17,7 @@ const customStyles = {
   
 
 const Add_user = () => {
+    {Header()}
     const [selected, setSelected] = useState("");
     const changeHandler = e => {
           setSelected(e.target.value)};

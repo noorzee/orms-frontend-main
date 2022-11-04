@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups/src';
 import{Navbar, Footer, Sidebar, ThemeSettings} from './components';
-import{Calendar, ColorPicker, Customers, Enquires, Results, Settings, Area, Bar, ColorMapping, Financial, Line, Pie, Stacked, Dashboard, Manage_results, Login,Add_user,Coursesmangement} from './pages';
+import{Calendar, usersetting,ColorPicker, Enquires, Results, Settings, Area, Bar, ColorMapping, Financial, Line, Pie, Stacked, Dashboard, Manage_results, Login,Add_user,Coursesmangement} from './pages';
 import { useStateContext } from './contexts/ContextProvider';
 import './App.css';
 import { Overview } from '@syncfusion/ej2/diagrams';

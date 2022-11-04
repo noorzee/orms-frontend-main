@@ -49,22 +49,6 @@ function NestedAccordination(){
 const lecture_items = () => {
   return (
     <div>
-    <div className='flex flex-shrink-0 m-3 flex-wrap justify-left gap-3 items-left w-full'>
-            {earningData.map((item)=>(
-              <div key={item.title} className='bg-white dark:text-gray-200
-              dark:bg-secondary-dark-bg md:w-56 p-4  rounded-2xl'>
-                <p>
-                  <span className='text-[40px] font-semibold'>
-                    {item.amount}
-                  </span>
-                  <span className={'text-sm text-${item.pcColor} ml-2'}>
-                    {item.percentage}
-                  </span>
-                </p>
-                <p className='text-sm text-gray-400 mt-1'>{item.title}</p>
-              </div>
-            ))}
-        </div>
         <div className="flex flex-col justify-left w-full h-auto py-auto ml-3">
     {NestedAccordination()}
   </div>

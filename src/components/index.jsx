@@ -1,5 +1,8 @@
 export { default as Button } from './Button';
 export { default as search_bar } from './search_bar';
+export { default as Resultscard } from './Resultscard';
+export { default as EnquireForm } from './EnquireForm';
+export { default as Usersetting } from './usersetting';
 export { default as add_subjects } from './add_subjects';
 export { default as subjectmanagementform } from './subjectmanagementform';
 export { default as Facultyanagementform } from './Facultyanagementform';
