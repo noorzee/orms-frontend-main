@@ -490,7 +490,7 @@ export const links = [
         icon: <FiHelpCircle />,
       },
       {
-        name: 'Add users',
+        name: 'Addusers',
         icon: <FiUserPlus />,
       },
       

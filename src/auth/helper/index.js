@@ -1,20 +1,22 @@
 import { API } from "../../backend";
 
-// export const signup = user => {
-//   return fetch(`${API}/signup`, {
-//     method: "POST",
-//     headers: {
-//       Accept: "application/json",
-//       "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify(user)
-//   })
-//     .then(response => {
-//       return response.json();
-//     })
-//     .catch(err => console.log(err));
-// };
+//signup API call
+export const signup = user => {
+  return fetch(`${API}/signup`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(user)
+  })
+    .then(response => {
+      return response.json();
+    })
+    .catch(err => console.log(err));
+};
 
+//signin API call
 export const signin = user => {
   return fetch(`${API}/signin`, {
     method: "POST",
@@ -37,6 +39,7 @@ export const authenticate = (data, next) => {
   }
 };
 
+//signout API call
 export const signout = next => {
   if (typeof window !== "undefined") {
     localStorage.removeItem("jwt");
