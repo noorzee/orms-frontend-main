@@ -19,7 +19,7 @@ const Dashboard = () => {
   <div className='flex flex-shrink-0 m-3 flex-wrap justify-left gap-3 items-left w-full'>
           {earningData.map((item)=>(
             <div key={item.title} className='bg-white dark:text-gray-200
-            dark:bg-secondary-dark-bg md:w-56 p-4  rounded-2xl'>
+            dark:bg-secondary-dark-bg md:w-56 p-4  rounded-2xl shadow-sm'>
               <p>
                 <span className='text-[40px] font-semibold'>
                   {item.amount}
@@ -34,7 +34,7 @@ const Dashboard = () => {
       </div>
     <div className='flex gap-4 items-left lg:flex-nowrap md:flex-nowrap sm:flex-wrap w-full m-0'>
     <div className='gap-10 sm:h-auto sm:w-auto md:w-1/2 md:h-96'>
-      <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl grid-cols-12 w-full flex-wrap'>
+      <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl grid-cols-12 w-full flex-wrap shadow-sm'>
         <div className='flex justify-between object-left'>
           <p className='font-semibold text-xl'>GPA Trend</p>
           <div className='flex items-center gap-4'>
@@ -61,7 +61,7 @@ const Dashboard = () => {
         {Updates ()}
         </div>
         </div>
-        <div className=' relative bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl h-full overflow-scroll flex w-full'>
+        <div className=' relative bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl h-full flex w-ful shadow-sm'>
           <div className=' flex-wrap place-content-between w-full grid-cols-12'>
             <div className='w-full grid-cols-12 relative'>
             <p className='font-semibold text-xl'>Recent Examination Results</p>

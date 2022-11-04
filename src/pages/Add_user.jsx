@@ -25,9 +25,9 @@ const Add_user = () => {
     <div className='w-1200'>
     <h1 className='font-semibold text-xl ml-4 mb-10'>Add Users</h1>
     <div className='flex flex-shrink-0 m-0 flex-wrap justify-left gap-3 items-left w-full'>
-         <div className='relative bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl h-full overflow-scroll  w-full'>
+         <div className='relative bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-6 rounded-2xl h-full  w-full shadow-sm'>
             <div className='w-full'>
-                <form class="w-full max-w-full">
+                <form class="w-full ">
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">First Name</label>

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups/src';
 import{Navbar, Footer, Sidebar, ThemeSettings} from './components';
-import{Calendar, ColorPicker, Customers, Enquires, Results, Settings, Area, Bar, ColorMapping, Financial, Line, Pie, Stacked, Dashboard, Lecture, Login,Add_user} from './pages';
+import{Calendar, ColorPicker, Customers, Enquires, Results, Settings, Area, Bar, ColorMapping, Financial, Line, Pie, Stacked, Dashboard, Manage_results, Login,Add_user,Coursesmangement} from './pages';
 import { useStateContext } from './contexts/ContextProvider';
 import './App.css';
 import { Overview } from '@syncfusion/ej2/diagrams';
@@ -71,8 +71,9 @@ useEffect(() => {
 
                         {/* Pages */}
                         <Route path='/Login' element={<Login />} />
-                        <Route path='/Lecture' element={<Lecture />} />
+                        <Route path='/Manage Results' element={<Manage_results />} />
                         <Route path='/Results' element={<Results />} />
+                        <Route path='/Manage Courses' element={<Coursesmangement />} />
                         <Route path='/Enquires' element={<Enquires />} />
                         <Route path='/Add Users' element={<Add_user />} />
                         <Route path='/Settings' element={<Settings />} />

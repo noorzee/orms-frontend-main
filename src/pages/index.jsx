@@ -1,6 +1,7 @@
 export { default as Enquires } from './Enquires';
 export { default as Add_user } from './Add_user';
-export { default as Lecture } from './Lecture';
+export { default as Manage_results } from './Manage_results';
+export { default as Coursesmangement } from './Coursesmangement';
 export { default as Login } from './Login';
 export { default as Results } from './Results';
 export { default as Settings } from './Settings';
