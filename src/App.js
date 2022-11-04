@@ -74,7 +74,7 @@ useEffect(() => {
                         <Route path='/Lecture' element={<Lecture />} />
                         <Route path='/Results' element={<Results />} />
                         <Route path='/Enquires' element={<Enquires />} />
-                        <Route path='/Add Users' element={<Add_user />} />
+                        <Route path='/AddUsers' element={<Add_user />} />
                         <Route path='/Settings' element={<Settings />} />
 
                          {/* Apps */}
