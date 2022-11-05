@@ -367,16 +367,6 @@ const Add_user = () => {
                       width="full"
                       btnOnClick={onSubmit}
                     />
-                    <button
-                      color="white"
-                      bgColor={currentColor}
-                      text="Submit"
-                      borderRadius="10px"
-                      width="full"
-                      onClick={onSubmit}
-                    >
-                      Hello
-                    </button>
                   </div>
                 </form>
                 <hr></hr>
