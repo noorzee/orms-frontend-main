@@ -1,4 +1,6 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
+import DataTable from "react-data-table-component";
 import Select from "react-select";
 import { createDepartment } from "../admin/helper/departmentApiCall";
 import { getAllFaculty } from "../admin/helper/facultyApiCall";
@@ -89,6 +91,37 @@ const Departmentanagementform = () => {
       .catch(console.log("Error in Add Faculty"));
   };
 
+
+  const [departments, setDepartments] = useState([]);
+
+const getDepartments = async () => {
+  try {
+    const response = await axios.get("http://localhost:8080/api/department");
+    setDepartments(response.data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const columns = [
+  {
+    name: "Department Code",
+    selector: (row) => row.departmentCode,
+  },
+  {
+    name: "Department Name",
+    selector: (row) => row.departmentName,
+  },
+  {
+    name: "Faculty Name",
+    selector: (row) => row.facultyId,
+  },
+];
+
+useEffect(() => {
+    getDepartments();
+}, []);
+
   return (
     <div className="w-full">
       <form class="w-full ">
@@ -174,6 +207,7 @@ const Departmentanagementform = () => {
           />
         </div>
       </form>
+      <DataTable columns={columns} data={departments} />
     </div>
   );
 };
